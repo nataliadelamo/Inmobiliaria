@@ -6,11 +6,9 @@
 package inmobiliaria;
 
 /**
- *
  * @author natalia
  */
 public class Inmobiliaria {
-
     /**
      * @param args the command line arguments
      */
@@ -27,15 +25,17 @@ public class Inmobiliaria {
             piso = new Piso(i, true, i*10, i+5, "Desconocida"+i, pp);
             miListaP.anyadirPiso(piso);
         }
-        
         miListaP.mostrarPisos();
         
         direc = "Desconocida8";
         piso = miListaP.buscaPiso(direc);
         if (piso!=null)
-            System.out.println("Encontrado "+piso.toString());
+            System.out.println("Encontrado el piso "+piso.toString());
            else
             System.out.println("No encontrado");
+        
+        
+        
             
         
         
